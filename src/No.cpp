@@ -42,6 +42,16 @@ void No<T>::setInfo(int pos, T info){
         throw std::invalid_argument("Indice fora do tamanho");
 
     infos[pos] = info;
+    ordenar();
+}
+
+template <class T>
+void No<T>::remover_info(T info){
+    int i = indice_de(info);
+    if (i == -1)
+        throw std::invalid_argument("Informacao nao existente para excluir");
+    infos[i] = NULL;
+    ordenar();
 }
 
 template <class T>
@@ -110,6 +120,34 @@ void No<T>::ordenar(){
             }
 
 }
+
+
+template <class T>
+int No<T>::eh_folha(){
+    for (int i=0; i<n; i++)
+        if (filhos[i] != NULL)
+            return 0;
+    return 1;
+}
+
+template <class T>
+int No<T>::indice_de(T info){
+    for (int i=0; i<n-1; i++)
+        if (infos[i] == info)
+            return i;
+    return -1;
+}
+
+template <class T>
+int No<T>::quantas_infos(){
+    int ret = 0;
+    for (int i=0; i<n-1; i++)
+        if (infos[i] != NULL)
+            ret++;
+    return ret;
+}
+
+
 template <class T>
 No<T>::~No()
 {
@@ -120,5 +158,7 @@ No<T>::~No()
             delete filhos[i];
     delete []filhos;
 }
+
+
 
 #endif

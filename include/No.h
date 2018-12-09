@@ -11,10 +11,13 @@ class No
         ~No();
 
         T info(int i);
+        int indice_de(T info);
         void inserir(T info);
         void setInfo(int pos, T info);
+        void remover_info(T info);
         T primeira_info();
         T ultima_info();
+        int quantas_infos();
 
         No<T>* filho(int i);
         No<T>* primeiro_filho();
@@ -22,7 +25,7 @@ class No
         void setFilho(int pos, No<T>* filho);
 
         int esta_cheio();
-
+        int eh_folha();
 
 
         friend ostream &operator<<(ostream& out, No<T>& no){

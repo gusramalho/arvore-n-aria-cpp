@@ -11,10 +11,13 @@ class ArvoreNaria
         ArvoreNaria(int n);
 
         void add(T info);
-        void remover();
+        void remover(T info);
 
         friend ostream &operator<<(ostream& out, ArvoreNaria<T>& arvore){
-
+           if (arvore.raiz == NULL){
+                out << "raiz nula" << endl;
+                return out;
+           }
 
            std::queue<No<T>* > fila = std::queue<No<T>* >();
            fila.push(arvore.raiz);
@@ -35,7 +38,6 @@ class ArvoreNaria
                         cont++;
                     }else{
                         cont_nulls++;
-
                     }
 
                 }
@@ -61,6 +63,9 @@ class ArvoreNaria
     private:
 
         int n;
+        T maior_info(No<T>*);
+        T menor_info(No<T>*);
+
 
 };
 

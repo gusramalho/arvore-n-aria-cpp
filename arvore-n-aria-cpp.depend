@@ -1,28 +1,28 @@
 # depslib dependency file v1.0
-1544334386 source:c:\users\carlo\onedrive\documentos\github\arvore-n-aria-cpp\main.cpp
+1544363245 source:c:\users\carlo\onedrive\documentos\github\arvore-n-aria-cpp\main.cpp
 	<iostream>
 	"ArvoreNaria.h"
 
-1544333884 source:c:\users\carlo\onedrive\documentos\github\arvore-n-aria-cpp\src\arvorenaria.cpp
+1544368043 source:c:\users\carlo\onedrive\documentos\github\arvore-n-aria-cpp\src\arvorenaria.cpp
 	"ArvoreNaria.h"
 
-1544334528 c:\users\carlo\onedrive\documentos\github\arvore-n-aria-cpp\include\arvorenaria.h
+1544368117 c:\users\carlo\onedrive\documentos\github\arvore-n-aria-cpp\include\arvorenaria.h
 	"No.h"
 	<iostream>
 	<queue>
 	<math.h>
 	"../src/ArvoreNaria.cpp"
 
-1544333884 c:\users\carlo\onedrive\documentos\github\arvore-n-aria-cpp\src\arvorenaria.cpp
+1544368043 c:\users\carlo\onedrive\documentos\github\arvore-n-aria-cpp\src\arvorenaria.cpp
 	"ArvoreNaria.h"
 
-1544333808 source:c:\users\carlo\onedrive\documentos\github\arvore-n-aria-cpp\src\no.cpp
+1544365426 source:c:\users\carlo\onedrive\documentos\github\arvore-n-aria-cpp\src\no.cpp
 	"No.h"
 
-1544328496 c:\users\carlo\onedrive\documentos\github\arvore-n-aria-cpp\include\no.h
+1544365195 c:\users\carlo\onedrive\documentos\github\arvore-n-aria-cpp\include\no.h
 	<iostream>
 	"../src/No.cpp"
 
-1544333808 c:\users\carlo\onedrive\documentos\github\arvore-n-aria-cpp\src\no.cpp
+1544365426 c:\users\carlo\onedrive\documentos\github\arvore-n-aria-cpp\src\no.cpp
 	"No.h"
 
