@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1544326186 source:c:\users\carlo\onedrive\documentos\github\arvore-n-aria-cpp\main.cpp
+	<iostream>
+	"No.h"
+
+1544322757 source:c:\users\carlo\onedrive\documentos\github\arvore-n-aria-cpp\src\arvorenaria.cpp
+	"ArvoreNaria.h"
+
+1544323498 c:\users\carlo\onedrive\documentos\github\arvore-n-aria-cpp\include\arvorenaria.h
+	<iostream>
+	"../src/ArvoreNaria.cpp"
+
+1544322757 c:\users\carlo\onedrive\documentos\github\arvore-n-aria-cpp\src\arvorenaria.cpp
+	"ArvoreNaria.h"
+
+1544326122 source:c:\users\carlo\onedrive\documentos\github\arvore-n-aria-cpp\src\no.cpp
+	"No.h"
+
+1544326252 c:\users\carlo\onedrive\documentos\github\arvore-n-aria-cpp\include\no.h
+	<iostream>
+	"../src/No.cpp"
+
+1544326122 c:\users\carlo\onedrive\documentos\github\arvore-n-aria-cpp\src\no.cpp
+	"No.h"
+
