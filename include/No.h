@@ -11,7 +11,7 @@ class No
         ~No();
 
         T info(int i);
-        void setInfo(T info);
+        void inserir(T info);
         void setInfo(int pos, T info);
         T primeira_info();
         T ultima_info();
@@ -45,6 +45,7 @@ class No
         int n;
         T* infos;
         No<T>** filhos;
+        void ordenar();
 
 
 };

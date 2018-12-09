@@ -5,7 +5,8 @@
 
 template <class T>
 No<T>::No(int n){
-
+    if (n < 2)
+        throw std::invalid_argument("N deve ser maior ou igual a 2");
     this->n = n;
     infos = new T[n-1];
     filhos = new No<T>*[n];
@@ -44,15 +45,18 @@ void No<T>::setInfo(int pos, T info){
 }
 
 template <class T>
-void No<T>::setInfo(T info){
+void No<T>::inserir(T info){
     for (int i=0; i<n-1; i++){
+
         if (infos[i] == NULL){
             infos[i] = info;
             break;
         }
+
         if (i == n-2)
             throw std::invalid_argument("Noh esta cheio");
     }
+    ordenar();
 }
 
 template <class T>
@@ -93,6 +97,19 @@ int No<T>::esta_cheio(){
     return ret == n-1;
 }
 
+template <class T>
+void No<T>::ordenar(){
+
+    for (int i=0; i<n-1; i++)
+        for (int j=i+1; j<n-1; j++)
+            if (infos[i] > infos[j])
+            {
+                int aux = infos[i];
+                infos[i] = infos[j];
+                infos[j] = aux;
+            }
+
+}
 template <class T>
 No<T>::~No()
 {

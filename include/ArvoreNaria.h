@@ -7,12 +7,19 @@ template <class T>
 class ArvoreNaria
 {
     public:
-        ArvoreNaria();
+        ArvoreNaria(int n);
+
+        void add(T info);
+        void remover();
+
+
+
 
     protected:
 
     private:
         No<T>* raiz;
+        int n;
 
 };
 

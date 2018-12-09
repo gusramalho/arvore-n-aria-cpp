@@ -5,8 +5,9 @@ using namespace std;
 int main()
 {
     No<int>* n = new No<int>(4);
-    n->setInfo(3);
-    n->setInfo(4);
+    n->inserir(3);
+    n->inserir(3);
+    n->inserir(3);
 
 
     if (n->esta_cheio())
