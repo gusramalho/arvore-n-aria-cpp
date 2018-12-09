@@ -80,5 +80,28 @@ No<T>* No<T>::ultimo_filho(){
     return filhos[n];
 }
 
+template <class T>
+int No<T>::esta_cheio(){
+
+    int ret = 0;
+    for (int i = 0; i < n - 1; i++)
+        if (infos[i] != NULL)
+        {
+           ret++;
+        }
+
+    return ret == n-1;
+}
+
+template <class T>
+No<T>::~No()
+{
+    delete []infos;
+
+    for (int i=0; i<n; i++)
+        if (filhos[i] != NULL)
+            delete filhos[i];
+    delete []filhos;
+}
 
 #endif

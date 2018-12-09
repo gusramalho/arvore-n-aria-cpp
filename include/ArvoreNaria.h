@@ -1,6 +1,8 @@
 #ifndef ARVORENARIA_H
 #define ARVORENARIA_H
+#include "No.h"
 #include <iostream>
+
 template <class T>
 class ArvoreNaria
 {
@@ -10,6 +12,8 @@ class ArvoreNaria
     protected:
 
     private:
+        No<T>* raiz;
+
 };
 
 #include "../src/ArvoreNaria.cpp"

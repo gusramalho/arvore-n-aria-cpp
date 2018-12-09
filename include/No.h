@@ -8,15 +8,20 @@ class No
 {
     public:
         No(int n);
+        ~No();
+
         T info(int i);
         void setInfo(T info);
         void setInfo(int pos, T info);
         T primeira_info();
         T ultima_info();
+
         No<T>* filho(int i);
         No<T>* primeiro_filho();
         No<T>* ultimo_filho();
         void setFilho(int pos, No<T>* filho);
+
+        int esta_cheio();
 
 
 
