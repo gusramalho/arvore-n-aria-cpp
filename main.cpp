@@ -1,17 +1,20 @@
 #include <iostream>
-#include "No.h"
+#include "ArvoreNaria.h"
 using namespace std;
 
 int main()
 {
-    No<int>* n = new No<int>(4);
-    n->inserir(3);
-    n->inserir(3);
-    n->inserir(3);
+    ArvoreNaria<int>* arv = new ArvoreNaria<int>(4);
 
-
-    if (n->esta_cheio())
-        cout << "f...";
-    cout << *n << endl;
+    arv->add(30);
+    arv->add(20);
+    arv->add(40);
+    arv->add(50);
+    arv->add(60);
+    arv->add(70);
+    arv->add(24);
+    arv->add(10);
+    arv->add(34);
+    cout << *arv<< endl;
     return 0;
 }

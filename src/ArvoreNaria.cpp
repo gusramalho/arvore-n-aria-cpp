@@ -15,7 +15,7 @@ template <class T>
 void ArvoreNaria<T>::add(T info){
     if (raiz == NULL){
         raiz = new No<T>(n);
-        raiz->setInfo(info);
+        raiz->inserir(info);
 
     }else{
 
@@ -24,6 +24,7 @@ void ArvoreNaria<T>::add(T info){
         int pos = -1;
 
         while (atual != NULL && atual->esta_cheio()){
+
             anterior = atual;
 
             if (info < atual->primeira_info()){
@@ -32,7 +33,7 @@ void ArvoreNaria<T>::add(T info){
 
             }else if (info > atual->ultima_info()){
                 atual = atual->ultimo_filho();
-                pos = n;
+                pos = n-1;
 
             }else{
 
@@ -46,15 +47,15 @@ void ArvoreNaria<T>::add(T info){
         }
 
         if (atual == NULL){
-            atual = new No<T>(n);
-            atual->setInfo(info);
-            anterior->setFilho(pos, atual);
+            No<T>* novo = new No<T>(n);
+            novo->inserir(info);
+            anterior->setFilho(pos, novo);
 
         }else if (!atual->esta_cheio()){
             atual->inserir(info);
         }
     }
-
-
 }
+
+
 #endif // ARVORENARIA_CPP

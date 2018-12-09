@@ -33,7 +33,7 @@ T No<T>::primeira_info(){
 
 template <class T>
 T No<T>::ultima_info(){
-    return infos[n-1];
+    return infos[n-2];
 }
 
 template <class T>
@@ -81,7 +81,7 @@ No<T>* No<T>::primeiro_filho(){
 
 template <class T>
 No<T>* No<T>::ultimo_filho(){
-    return filhos[n];
+    return filhos[n-1];
 }
 
 template <class T>
